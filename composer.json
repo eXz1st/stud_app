@@ -1,0 +1,23 @@
+{
+    "name": "mindk/stud_app",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "eXz1st",
+            "email": "kiryan.maksim@gmail.com"
+        }
+    ],
+	"autoload": {
+      "psr-4": {"Mindk\\Framework\\": "src/"}
+	},
+	"repositories": [
+	{
+		"type": "vcs",
+		"url": "git@github.com:eXz1st/stud_framework.git"
+	}
+	],
+    "require": {
+	  "mindk/stud_framework": "dev-master"
+    }
+}
