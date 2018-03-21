@@ -1,0 +1,210 @@
+2017/12/21 21:34:01 [error] 1102#1102: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_api.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_api.loc"
+2017/12/21 21:34:02 [error] 1102#1102: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_api.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_api.loc", referrer: "http://stud_api.loc/"
+2017/12/21 21:44:45 [error] 3500#3500: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:54:27 [error] 3500#3500: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/autoload.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/autoload.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:32 [error] 3500#3500: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:32 [error] 3500#3500: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:33 [error] 3500#3500: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:33 [error] 3500#3500: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:33 [error] 3500#3500: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:33 [error] 3500#3500: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:34 [error] 3500#3500: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:36 [error] 3500#3500: *27 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:55:40 [error] 3500#3500: *29 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php): failed to open stream: No such file or directory in /var/www/stud_app/vendor/autoload.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/stud_app/vendor/composer/mindk/stud_framework/src/App.php' (include_path='.:/usr/share/php') in /var/www/stud_app/vendor/autoload.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/21 21:56:14 [error] 3500#3500: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/23 22:42:57 [error] 1094#1094: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/27 16:58:49 [error] 1084#1084: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/27 16:58:49 [error] 1084#1084: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc", referrer: "http://stud_app.loc/"
+2017/12/27 17:00:05 [error] 1084#1084: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/27 17:00:05 [error] 1084#1084: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/27 17:00:06 [error] 1084#1084: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/27 17:00:06 [error] 1084#1084: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/27 18:46:59 [error] 1097#1097: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2017/12/27 18:47:00 [error] 1097#1097: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Mindk\Framework\App' not found in /var/www/stud_app/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /var/www/stud_app/public/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc", referrer: "http://stud_app.loc/"
+2018/01/25 15:35:26 [error] 1067#1067: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class App\Controller\Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('App\\Controller\\...')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:38:04 [error] 1067#1067: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('Controller')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:38:04 [error] 1067#1067: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('Controller')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:39:25 [error] 1067#1067: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class app\Controller\Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('app\\Controller\\...')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:39:26 [error] 1067#1067: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class app\Controller\Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('app\\Controller\\...')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:39:27 [error] 1067#1067: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class app\Controller\Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('app\\Controller\\...')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:39:27 [error] 1067#1067: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class app\Controller\Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('app\\Controller\\...')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:39:27 [error] 1067#1067: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class app\Controller\Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('app\\Controller\\...')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:40:36 [error] 1067#1067: *13 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class app\Controllers\Controller does not exist in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/vendor/mindk/stud_framework/src/App.php(29): ReflectionClass->__construct('app\\Controllers...')
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_app/vendor/mindk/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:41:53 [error] 1067#1067: *18 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION) in /var/www/stud_app/app/Controllers/Controller.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/01/25 15:46:23 [error] 1067#1067: *26 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting function (T_FUNCTION) in /var/www/stud_app/app/Controllers/Controller.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/02/01 13:39:36 [error] 1064#1064: *16 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Mindk\Framework\Http\Request\Request::get() must be of the type string, array given, called in /var/www/stud_framework/src/App.php on line 28 and defined in /var/www/stud_framework/src/Http/Request/Request.php:74
+Stack trace:
+#0 /var/www/stud_framework/src/App.php(28): Mindk\Framework\Http\Request\Request->get(Array)
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_framework/src/Http/Request/Request.php on line 74" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/02/01 13:41:23 [error] 1064#1064: *18 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: URI in /var/www/stud_framework/src/App.php on line 28
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Mindk\Framework\Http\Request\Request::get() must be of the type string, null given, called in /var/www/stud_framework/src/App.php on line 28 and defined in /var/www/stud_framework/src/Http/Request/Request.php:74
+Stack trace:
+#0 /var/www/stud_framework/src/App.php(28): Mindk\Framework\Http\Request\Request->get(NULL)
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_framework/src/Http/Request/Request.php on line 74" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/02/01 13:42:58 [error] 1064#1064: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Mindk\Framework\Http\Request\Request::get() must be of the type string, object given, called in /var/www/stud_framework/src/App.php on line 31 and defined in /var/www/stud_framework/src/Http/Request/Request.php:74
+Stack trace:
+#0 /var/www/stud_framework/src/App.php(31): Mindk\Framework\Http\Request\Request->get(Object(Mindk\Framework\Routing\Route))
+#1 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#2 {main}
+  thrown in /var/www/stud_framework/src/Http/Request/Request.php on line 74" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/02/16 12:41:11 [error] 1194#1194: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to private Mindk\Framework\Http\Request\Request::__construct() from context 'Mindk\Framework\App' in /var/www/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#1 {main}
+  thrown in /var/www/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/02/16 12:41:12 [error] 1194#1194: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to private Mindk\Framework\Http\Request\Request::__construct() from context 'Mindk\Framework\App' in /var/www/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#1 {main}
+  thrown in /var/www/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc", referrer: "http://stud_app.loc/"
+2018/02/16 12:41:13 [error] 1194#1194: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to private Mindk\Framework\Http\Request\Request::__construct() from context 'Mindk\Framework\App' in /var/www/stud_framework/src/App.php:29
+Stack trace:
+#0 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#1 {main}
+  thrown in /var/www/stud_framework/src/App.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/05 17:12:58 [error] 5983#5983: *463 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/stud_framework/src/App.php:28
+Stack trace:
+#0 /var/www/stud_framework/src/App.php(28): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /var/www/stud_app/public/index.php(8): Mindk\Framework\App->__construct(Array)
+#2 {main}
+  thrown in /var/www/stud_framework/src/App.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/05 17:12:58 [error] 5983#5983: *460 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/stud_framework/src/App.php:28
+Stack trace:
+#0 /var/www/stud_framework/src/App.php(28): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /var/www/stud_app/public/index.php(8): Mindk\Framework\App->__construct(Array)
+#2 {main}
+  thrown in /var/www/stud_framework/src/App.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/05 17:12:59 [error] 5983#5983: *460 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/stud_framework/src/App.php:28
+Stack trace:
+#0 /var/www/stud_framework/src/App.php(28): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /var/www/stud_app/public/index.php(8): Mindk\Framework\App->__construct(Array)
+#2 {main}
+  thrown in /var/www/stud_framework/src/App.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc", referrer: "http://stud_app.loc/"
+2018/03/21 10:16:44 [error] 1119#1119: *7 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:46 [error] 1119#1119: *7 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:46 [error] 1119#1119: *7 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:47 [error] 1119#1119: *7 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:47 [error] 1119#1119: *7 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:50 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:50 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:51 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:51 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:51 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:51 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:51 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:51 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:52 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:52 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:53 [error] 1119#1119: *13 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:16:57 [error] 1119#1119: *25 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:17:41 [error] 1119#1119: *27 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:17:42 [error] 1119#1119: *31 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:17:53 [error] 1119#1119: *33 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:17:53 [error] 1119#1119: *36 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:25:20 [error] 1119#1119: *45 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:25:20 [error] 1119#1119: *45 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:25:20 [error] 1119#1119: *45 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:32:56 [error] 1119#1119: *70 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:32:56 [error] 1119#1119: *70 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:32:57 [error] 1119#1119: *70 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:32:57 [error] 1119#1119: *70 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:35:28 [error] 1119#1119: *75 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/21 10:35:29 [error] 1119#1119: *75 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc", referrer: "http://stud_app.loc/products/"
