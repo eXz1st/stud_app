@@ -208,3 +208,178 @@ Stack trace:
 2018/03/21 10:32:57 [error] 1119#1119: *70 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
 2018/03/21 10:35:28 [error] 1119#1119: *75 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
 2018/03/21 10:35:29 [error] 1119#1119: *75 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /var/www/stud_framework/src/App.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc", referrer: "http://stud_app.loc/products/"
+2018/03/31 11:28:44 [error] 1187#1187: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\ProductModel::__construct() must be an instance of App\Models\DBOConnectorInterface, null given in /var/www/stud_app/app/Models/ProductModel.php:18
+Stack trace:
+#0 [internal function]: App\Models\ProductModel->__construct(NULL)
+#1 /var/www/stud_framework/src/DI/Injector.php(72): ReflectionClass->newInstanceArgs(Array)
+#2 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('App\\Models\\Prod...')
+#3 /var/www/stud_framework/src/App.php(43): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#4 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#5 {main}
+  thrown in /var/www/stud_app/app/Models/ProductModel.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/03/31 16:16:00 [error] 1187#1187: *11 FastCGI sent in stderr: "PHP message: PHP TypeError:  Argument 1 passed to App\Models\ProductModel::__construct() must be an instance of App\Models\DBOConnectorInterface, null given in /var/www/stud_app/app/Models/ProductModel.php on line 18
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   6. App\Models\ProductModel->__construct() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\ProductModel::__construct() must be an instance of App\Models\DBOConnectorInterface, null given in /var/www/stud_app/app/Models/ProductModel.php:18
+Stack trace:
+#0 [internal function]: App\Models\ProductModel->__construct(NULL)
+#1 /var/www/stud_framework/src/DI/Injector.php(72): ReflectionClass->newInstanceArgs(Array)
+#2 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('App\\Models\\Prod...')
+#3 /var/www/stud_framework/src/App.php(43): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#4 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#5 {main}
+  thrown in /var/www/stud_app/app/Models/ProductModel.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/04/01 16:19:03 [error] 1169#1169: *7 FastCGI sent in stderr: "PHP message: PHP TypeError:  Argument 1 passed to App\Models\ProductModel::__construct() must be an instance of App\Models\DBOConnectorInterface, null given in /var/www/stud_app/app/Models/ProductModel.php on line 18
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   6. App\Models\ProductModel->__construct() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\ProductModel::__construct() must be an instance of App\Models\DBOConnectorInterface, null given in /var/www/stud_app/app/Models/ProductModel.php:18
+Stack trace:
+#0 [internal function]: App\Models\ProductModel->__construct(NULL)
+#1 /var/www/stud_framework/src/DI/Injector.php(72): ReflectionClass->newInstanceArgs(Array)
+#2 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('App\\Models\\Prod...')
+#3 /var/www/stud_framework/src/App.php(43): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#4 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#5 {main}
+  thrown in /var/www/stud_app/app/Models/ProductModel.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/04/01 16:22:04 [error] 1169#1169: *9 FastCGI sent in stderr: "PHP message: PHP Notice:  Array to string conversion in /var/www/stud_framework/src/DB/GenericConnector.php on line 17
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConnector->__construct() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   9. sprintf() /var/www/stud_framework/src/DB/GenericConnector.php:17
+PHP message: PHP TypeError:  PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php on line 19
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConnec
+2018/04/01 16:22:04 [error] 1169#1169: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php:19
+Stack trace:
+#0 /var/www/stud_framework/src/DB/GenericConnector.php(19): PDO->__construct('mysql:host=Arra...', Array, Array)
+#1 [internal function]: Mindk\Framework\DB\GenericConnector->__construct(Object(Mindk\Framework\Config\Config))
+#2 /var/www/stud_framework/src/DI/Injector.php(72): ReflectionClass->newInstanceArgs(Array)
+#3 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('Mindk\\Framework...')
+#4 /var/www/stud_framework/src/DI/Injector.php(66): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#5 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('App\\Models\\Prod...')
+#6 /var/www/stud_framework/src/App.php(43): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#7 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#8 {main}
+  thro" while reading upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/04/01 16:23:51 [error] 1169#1169: *11 FastCGI sent in stderr: "PHP message: PHP Notice:  Array to string conversion in /var/www/stud_framework/src/DB/GenericConnector.php on line 17
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConnector->__construct() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   9. sprintf() /var/www/stud_framework/src/DB/GenericConnector.php:17
+PHP message: PHP TypeError:  PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php on line 19
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConne
+2018/04/01 16:23:51 [error] 1169#1169: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php:19
+Stack trace:
+#0 /var/www/stud_framework/src/DB/GenericConnector.php(19): PDO->__construct('mysql:host=Arra...', Array, Array)
+#1 [internal function]: Mindk\Framework\DB\GenericConnector->__construct(Object(Mindk\Framework\Config\Config))
+#2 /var/www/stud_framework/src/DI/Injector.php(72): ReflectionClass->newInstanceArgs(Array)
+#3 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('Mindk\\Framework...')
+#4 /var/www/stud_framework/src/DI/Injector.php(66): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#5 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('App\\Models\\Prod...')
+#6 /var/www/stud_framework/src/App.php(43): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#7 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#8 {main}
+  thro" while reading upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/04/01 16:23:52 [error] 1169#1169: *11 FastCGI sent in stderr: "PHP message: PHP Notice:  Array to string conversion in /var/www/stud_framework/src/DB/GenericConnector.php on line 17
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConnector->__construct() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   9. sprintf() /var/www/stud_framework/src/DB/GenericConnector.php:17
+PHP message: PHP TypeError:  PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php on line 19
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConne
+2018/04/01 16:23:52 [error] 1169#1169: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php:19
+Stack trace:
+#0 /var/www/stud_framework/src/DB/GenericConnector.php(19): PDO->__construct('mysql:host=Arra...', Array, Array)
+#1 [internal function]: Mindk\Framework\DB\GenericConnector->__construct(Object(Mindk\Framework\Config\Config))
+#2 /var/www/stud_framework/src/DI/Injector.php(72): ReflectionClass->newInstanceArgs(Array)
+#3 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('Mindk\\Framework...')
+#4 /var/www/stud_framework/src/DI/Injector.php(66): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#5 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('App\\Models\\Prod...')
+#6 /var/www/stud_framework/src/App.php(43): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#7 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#8 {main}
+  thro" while reading upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /products HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"
+2018/04/01 16:25:33 [error] 1169#1169: *17 FastCGI sent in stderr: "PHP message: PHP Notice:  Array to string conversion in /var/www/stud_framework/src/DB/GenericConnector.php on line 17
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConnector->__construct() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   9. sprintf() /var/www/stud_framework/src/DB/GenericConnector.php:17
+PHP message: PHP TypeError:  PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php on line 19
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/stud_app/public/index.php:0
+PHP message: PHP   2. Mindk\Framework\App->run() /var/www/stud_app/public/index.php:9
+PHP message: PHP   3. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/App.php:43
+PHP message: PHP   4. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   5. Mindk\Framework\DI\Injector::resolveParams() /var/www/stud_framework/src/DI/Injector.php:66
+PHP message: PHP   6. Mindk\Framework\DI\Injector::make() /var/www/stud_framework/src/DI/Injector.php:100
+PHP message: PHP   7. ReflectionClass->newInstanceArgs() /var/www/stud_framework/src/DI/Injector.php:72
+PHP message: PHP   8. Mindk\Framework\DB\GenericConne
+2018/04/01 16:25:33 [error] 1169#1169: *17 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: PDO::__construct() expects parameter 2 to be string, array given in /var/www/stud_framework/src/DB/GenericConnector.php:19
+Stack trace:
+#0 /var/www/stud_framework/src/DB/GenericConnector.php(19): PDO->__construct('mysql:host=Arra...', Array, Array)
+#1 [internal function]: Mindk\Framework\DB\GenericConnector->__construct(Object(Mindk\Framework\Config\Config))
+#2 /var/www/stud_framework/src/DI/Injector.php(72): ReflectionClass->newInstanceArgs(Array)
+#3 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('Mindk\\Framework...')
+#4 /var/www/stud_framework/src/DI/Injector.php(66): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#5 /var/www/stud_framework/src/DI/Injector.php(100): Mindk\Framework\DI\Injector::make('App\\Models\\Prod...')
+#6 /var/www/stud_framework/src/App.php(43): Mindk\Framework\DI\Injector::resolveParams(Array, Array)
+#7 /var/www/stud_app/public/index.php(9): Mindk\Framework\App->run()
+#8 {main}
+  thro" while reading upstream, client: 127.0.0.1, server: stud_app.loc, request: "GET /product/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "stud_app.loc"

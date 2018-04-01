@@ -27,9 +27,9 @@ class ProductController
      * @param   int Product ID
      * @return  mixed
      */
-    function show($id){
-        $model = new ProductModel();
-        $item = $model->getRecord((int)$id);
+    function show(ProductModel $model, $id){
+
+        $item = $model->load($id);
 
         //Check if record exists
         if(empty($item)) {
