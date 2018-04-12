@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Models\ProductModel;
+use Mindk\Framework\DI\Injector;
 use Mindk\Framework\Exceptions\NotFoundException;
 use Mindk\Framework\Http\Request\Request;
 /**
@@ -38,10 +39,37 @@ class ProductController
 
         return $item;
     }
+
+    function delete(ProductModel $model, $id) {
+
+        if(empty($model->load($id))) {
+            throw new NotFoundException('Product with id ' . $id . ' not found');
+        }
+
+        return $model->delete($id);
+    }
+
+    function update(ProductModel $model, $id) {
+
+        if(empty($model->load($id))) {
+            throw new NotFoundException('Product with id ' . $id . ' not found');
+        }
+
+        $model->id = $id;
+        $model->name = 'Name';
+        $model->price = 300;
+        $model->published = 1;
+
+        return $model->save();
+    }
+
     /**
      * Create product
      */
-    function create(){
-        //@TODO: Implement this
+    function create(ProductModel $model){
+        $data['name'] = "NewName";
+        $data['price'] = 100;
+        $data['published'] = 1;
+        return $model->create($data);
     }
 }
